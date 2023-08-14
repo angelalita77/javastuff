@@ -13,6 +13,29 @@
             return num1*num2;
         }
         
+        let word = "fiNally";
+        let cappedLetter = word.toLowerCase();
+        let cutWord = word.substr(1);
+
+        function firstLetterCap(str) {
+        return str[1].toUpperCase + str.substr(1);
+        }
+
+        console.log(cappedLetter);
+        console.log(cutWord);
+
+        function firstLetterCaptial(str) {
+        let allLower = str.toLowerCase();
+        return allLower[0].toUpperCase()+allLower.substr(1);
+        }
+
+        let newWord = word[0].toUpperCase()+word.substr(1);
+        console.log(newWord);
+
+        let cappedWord = firstLetterCaptial(word);
+        console.log(cappedWord);
+
+        
         console.log(multi(5, 7));
         console.log(add7(3));
     </script>
